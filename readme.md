@@ -62,7 +62,7 @@ void mousePressed() {
 }
 ```
 Derfor startede vi med at finde ud af hvad de forskellig variabler var og gav dem nye navne. Derefter fjernede vi koden der gjorde at “fuglen” fløj og indsatte outputtet fra arduinos serial port, og satte y-værdien til dette.  
-![mathias](./media/Udklip.png)  
+![mathias](./media/Udklip.PNG)  
 Først testede vi processing programmet, ved at bruge en analog drejekontakt, hvor vi sendte værdien fra dreje-kontakten over, og brugte den som y-værdi, efter vi havde konstateret at programmet kunne bruge værdien direkte fra arduinoen som y-værdi… Og ja det virkede på første forsøg med dreje-kontakten overraskende nok.  
 ```C
 void setup() {
