@@ -78,5 +78,5 @@ void loop() {
 
 ```
 På arduinoen fandt vi det interval hvor at sensor outputtet var mest stabilt, hvilket var mellem 240 og 400, og derefter begrænsede vi dataen fra arduino til at være mellem disse værdier. Derefter lavede vi på arduinoen kode der læste værdien når den var mellem 240 til 400 og omdannede dette med en map-funktion, så den var i intervallet 0 og 800 og passede procentvis. Derefter sendte vi denne værdi serielt over til processing, hvor den så blev sat som y-værdien.  
-![demo](./media/jacob_playing.mp4)  
-<a href="https://drive.google.com/file/d/1KYcbtyh6FTVBPi7QabVsb4fBEtThw_c9/preview" width="640" height="480"></a>
+[![demo1](./media/Screenshot_1.png)](https://drive.google.com/file/d/19TPxVFZP-zMg7yGOTp9KEyN7YVYG5X9Q/preview)  
+[![demo2](./media/Screenshot_2.png)](https://drive.google.com/file/d/1KYcbtyh6FTVBPi7QabVsb4fBEtThw_c9/preview)
