@@ -1,4 +1,4 @@
-# Steppy Goomba 
+# Steppy Goomba (Først hed den Slappy Bird, bagefter Crappy Mario og nu hedder den Steppy Goomba... vi er ikke så gode til navne)
 Vi startede med at lave en brainstorm over mulige projekter, hvor man ville bruge en tryksensor. Derefter valgte vi en af ideerne og bestemte nogle krav til programmet. Vi valgte projektet “Slappy Bird”, hvilket var en kopi af “Flappy Bird”, men hvor man brugte en tryksensor.  
   
 Vi lavede en lav-kvalitets prototype i paint, hvor vi markerede fuglen og styrede den henad i takt med at en af os trykkede på noget, for at simulere hvordan gameplayet ville blive.  
