@@ -4,7 +4,9 @@ Vi startede med at lave en brainstorm over mulige projekter, hvor man ville brug
 Vi lavede en lav-kvalitets prototype i paint, hvor vi markerede fuglen og styrede den henad i takt med at en af os trykkede på noget, for at simulere hvordan gameplayet ville blive.  
 ![simulation](./media/sketch.png)  
 
-For at udnytte tiden bedst muligt valgte vi at finde et projekt der allerede havde lavet en simpel version af “Flappy Bird” vi kunne modificere. Vi endte med at vælge projektet “Crappy Bird” lavet af [kbyte](https://www.ktbyte.com/java-tutorial/game-walkthroughs) da det havde en størrelse der gør det nemt at modificere. Det enest problem var at navngivningen var med vilje dårlig.
+For at udnytte tiden bedst muligt valgte vi at finde et projekt der allerede havde lavet en simpel version af “Flappy Bird” vi kunne modificere. Vi endte med at vælge projektet “Crappy Bird” lavet af [kbyte](https://www.ktbyte.com/java-tutorial/game-walkthroughs) da det havde en størrelse der gør det nemt at modificere. Det enest problem var at navngivningen var med vilje dårlig.  
+  
+Efter at vi havde testet spillet, indså vi at det ikke rigtigt var flappy bird, da flappy bruger en knap til at “hoppe”, hvor vi derimod bruger en sensor til at styre højde på vores avatar. Så vi valgte at skifte tema, temaet vi valgte var mario, hvor det er en para-goomba (goomba med vinger) som skulle være vores avatar. Derudover ændrede vi spritesne til at have et mario tema, så forhindringerne blev til mario-pipes og baggrunden fik et mario tema, og som er loopende.
 ```Java
 import processing.serial.*;
 
@@ -77,6 +79,6 @@ void loop() {
 }
 
 ```
-På arduinoen fandt vi det interval hvor at sensor outputtet var mest stabilt, hvilket var mellem 240 og 400, og derefter begrænsede vi dataen fra arduino til at være mellem disse værdier. Derefter lavede vi på arduinoen kode der læste værdien når den var mellem 240 til 400 og omdannede dette med en map-funktion, så den var i intervallet 0 og 800 og passede procentvis. Derefter sendte vi denne værdi serielt over til processing, hvor den så blev sat som y-værdien.  
+Vi lavede en tryksensor selv med styrofoam, derefter fandt vi på arduinoen det interval hvor at sensor outputtet var mest stabilt, hvilket var mellem 240 og 400, og derefter begrænsede vi dataen fra arduino til at være mellem disse værdier. Derefter lavede vi på arduinoen kode der læste værdien når den var mellem 240 til 400 og omdannede dette med en map-funktion, så den var i intervallet 0 og 800 og passede procentvis. Derefter sendte vi denne værdi serielt over til processing, hvor den så blev sat som y-værdien.
 [![demo1](./media/Screenshot_1.png)](https://drive.google.com/file/d/19TPxVFZP-zMg7yGOTp9KEyN7YVYG5X9Q/preview)  
 [![demo2](./media/Screenshot_2.png)](https://drive.google.com/file/d/1KYcbtyh6FTVBPi7QabVsb4fBEtThw_c9/preview)
