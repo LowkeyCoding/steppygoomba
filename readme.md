@@ -59,7 +59,9 @@ void mousePressed() {
   wy[0]=(wy[1]=wx[0]=600)-200;
 }
 ```
-Derfor startede vi med at finde ud af hvad de forskellig variabler var og gav dem nye navne. Derefter fjernede vi koden der gjorde at “fuglen” fløj og indsatte outputtet fra arduinos serial port, og satte y-værdien til dette. 
+Derfor startede vi med at finde ud af hvad de forskellig variabler var og gav dem nye navne. Derefter fjernede vi koden der gjorde at “fuglen” fløj og indsatte outputtet fra arduinos serial port, og satte y-værdien til dette.  
+![mathias](./media/Udklip.png)  
+Først testede vi processing programmet, ved at bruge en analog drejekontakt, hvor vi sendte værdien fra dreje-kontakten over, og brugte den som y-værdi, efter vi havde konstateret at programmet kunne bruge værdien direkte fra arduinoen som y-værdi… Og ja det virkede på første forsøg med dreje-kontakten overraskende nok.  
 ```C
 void setup() {
   Serial.begin(115200);
@@ -75,6 +77,6 @@ void loop() {
 }
 
 ```
-På  arduinoen fandt vi det interval hvor at sensor outputtet var mest stabilt, hvilket var mellem 240 og 400, og derefter begrænsede vi dataen fra arduino til at være mellem disse værdier. Derefter lavede vi på arduinoen kode der læste værdien når den var mellem 240 til 400 og omdannede dette med en map-funktion, så den var i intervallet 0 og 800 og passede procentvis. Derefter sendte vi denne værdi serielt over til processing, hvor den så blev sat som y-værdien.  
+På arduinoen fandt vi det interval hvor at sensor outputtet var mest stabilt, hvilket var mellem 240 og 400, og derefter begrænsede vi dataen fra arduino til at være mellem disse værdier. Derefter lavede vi på arduinoen kode der læste værdien når den var mellem 240 til 400 og omdannede dette med en map-funktion, så den var i intervallet 0 og 800 og passede procentvis. Derefter sendte vi denne værdi serielt over til processing, hvor den så blev sat som y-værdien.  
 ![demo](./media/jacob_playing.mp4)  
 ![demo2](./media/loke_playing.mp4)  
